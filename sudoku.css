@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.sudoku-container {
+    text-align: center; /* Merkezde hizalama */
+}
+
+.sudoku-title {
+    margin-bottom: 20px; /* Başlık ve Sudoku arasında boşluk */
+    color: #333; /* Başlık rengi */
+    font-size: 2em; /* Başlık boyutu */
+}
+
+.sudoku-grid {
+    display: grid;
+    grid-template-columns: repeat(9, 50px);
+    grid-template-rows: repeat(9, 50px);
+    gap: 2px;
+    margin: auto; /* Izgarayı merkezde hizalama */
+    border: 4px solid #000; /* Dış çerçeve - kalın */
+}
+
+.cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    font-size: 20px;
+    font-weight: bold;
+}
